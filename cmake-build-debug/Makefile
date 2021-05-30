@@ -142,6 +142,19 @@ Arr1/fast:
 .PHONY : Arr1/fast
 
 #=============================================================================
+# Target rules for targets named String47
+
+# Build rule for target.
+String47: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 String47
+.PHONY : String47
+
+# fast build rule for target.
+String47/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/build
+.PHONY : String47/fast
+
+#=============================================================================
 # Target rules for targets named BT1
 
 # Build rule for target.
@@ -211,6 +224,33 @@ BT1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/162.cpp.s
 .PHONY : 162.cpp.s
 
+47.obj: 47.cpp.obj
+
+.PHONY : 47.obj
+
+# target to build an object file
+47.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/47.cpp.obj
+.PHONY : 47.cpp.obj
+
+47.i: 47.cpp.i
+
+.PHONY : 47.i
+
+# target to preprocess a source file
+47.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/47.cpp.i
+.PHONY : 47.cpp.i
+
+47.s: 47.cpp.s
+
+.PHONY : 47.s
+
+# target to generate assembly for a file
+47.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/47.cpp.s
+.PHONY : 47.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,12 +261,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Arr1
 	@echo ... BT1
+	@echo ... String47
 	@echo ... 1.obj
 	@echo ... 1.i
 	@echo ... 1.s
 	@echo ... 162.obj
 	@echo ... 162.i
 	@echo ... 162.s
+	@echo ... 47.obj
+	@echo ... 47.i
+	@echo ... 47.s
 .PHONY : help
 
 

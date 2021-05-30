@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = C:\Users\parth\CLionProjects\DSA\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/Arr1.dir/all
+all: CMakeFiles/String47.dir/all
 all: CMakeFiles/BT1.dir/all
 
 .PHONY : all
@@ -83,6 +84,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Arr1.dir/clean
+clean: CMakeFiles/String47.dir/clean
 clean: CMakeFiles/BT1.dir/clean
 
 .PHONY : clean
@@ -113,6 +115,33 @@ Arr1: CMakeFiles/Arr1.dir/rule
 CMakeFiles/Arr1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/clean
 .PHONY : CMakeFiles/Arr1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/String47.dir
+
+# All Build rule for target.
+CMakeFiles/String47.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target String47"
+.PHONY : CMakeFiles/String47.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/String47.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/String47.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/String47.dir/rule
+
+# Convenience name for target.
+String47: CMakeFiles/String47.dir/rule
+
+.PHONY : String47
+
+# clean rule for target.
+CMakeFiles/String47.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/clean
+.PHONY : CMakeFiles/String47.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BT1.dir
