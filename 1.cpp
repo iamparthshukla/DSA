@@ -1,3 +1,9 @@
+// Reverse an array
+// There are generally two methods:
+// 1. Make a new array and store elements using a reverse loop
+// 2. Make a temp element, and reverse the elements using that
+// We are using method 2
+
 #include <iostream>
 using namespace std;
 
@@ -37,7 +43,3 @@ int main()
         n--;
     }
 }
-
-// There are generally two methods:
-// 1. Make a new array and store elements using a reverse loop
-// 2. Make a temp elements, and reverse the elements using that
