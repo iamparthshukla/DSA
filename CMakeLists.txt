@@ -3,4 +3,5 @@ project(DSA)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DSA main.cpp)
+add_executable(Arr1 1.cpp)
+add_executable(BT1 162.cpp 1.cpp)

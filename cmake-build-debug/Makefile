@@ -129,44 +129,87 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DSA
+# Target rules for targets named Arr1
 
 # Build rule for target.
-DSA: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DSA
-.PHONY : DSA
+Arr1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Arr1
+.PHONY : Arr1
 
 # fast build rule for target.
-DSA/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/build
-.PHONY : DSA/fast
+Arr1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/build
+.PHONY : Arr1/fast
 
-main.obj: main.cpp.obj
+#=============================================================================
+# Target rules for targets named BT1
 
-.PHONY : main.obj
+# Build rule for target.
+BT1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 BT1
+.PHONY : BT1
+
+# fast build rule for target.
+BT1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/build
+.PHONY : BT1/fast
+
+1.obj: 1.cpp.obj
+
+.PHONY : 1.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/1.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/1.cpp.obj
+.PHONY : 1.cpp.obj
 
-main.i: main.cpp.i
+1.i: 1.cpp.i
 
-.PHONY : main.i
+.PHONY : 1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/main.cpp.i
-.PHONY : main.cpp.i
+1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/1.cpp.i
+.PHONY : 1.cpp.i
 
-main.s: main.cpp.s
+1.s: 1.cpp.s
 
-.PHONY : main.s
+.PHONY : 1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/main.cpp.s
-.PHONY : main.cpp.s
+1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/1.cpp.s
+.PHONY : 1.cpp.s
+
+162.obj: 162.cpp.obj
+
+.PHONY : 162.obj
+
+# target to build an object file
+162.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/162.cpp.obj
+.PHONY : 162.cpp.obj
+
+162.i: 162.cpp.i
+
+.PHONY : 162.i
+
+# target to preprocess a source file
+162.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/162.cpp.i
+.PHONY : 162.cpp.i
+
+162.s: 162.cpp.s
+
+.PHONY : 162.s
+
+# target to generate assembly for a file
+162.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/162.cpp.s
+.PHONY : 162.cpp.s
 
 # Help Target
 help:
@@ -176,10 +219,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... DSA
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Arr1
+	@echo ... BT1
+	@echo ... 1.obj
+	@echo ... 1.i
+	@echo ... 1.s
+	@echo ... 162.obj
+	@echo ... 162.i
+	@echo ... 162.s
 .PHONY : help
 
 

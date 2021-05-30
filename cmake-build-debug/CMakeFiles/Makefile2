@@ -71,7 +71,8 @@ CMAKE_BINARY_DIR = C:\Users\parth\CLionProjects\DSA\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/DSA.dir/all
+all: CMakeFiles/Arr1.dir/all
+all: CMakeFiles/BT1.dir/all
 
 .PHONY : all
 
@@ -81,36 +82,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/DSA.dir/clean
+clean: CMakeFiles/Arr1.dir/clean
+clean: CMakeFiles/BT1.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DSA.dir
+# Target rules for target CMakeFiles/Arr1.dir
 
 # All Build rule for target.
-CMakeFiles/DSA.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target DSA"
-.PHONY : CMakeFiles/DSA.dir/all
+CMakeFiles/Arr1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Arr1"
+.PHONY : CMakeFiles/Arr1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DSA.dir/rule: cmake_check_build_system
+CMakeFiles/Arr1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DSA.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Arr1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/DSA.dir/rule
+.PHONY : CMakeFiles/Arr1.dir/rule
 
 # Convenience name for target.
-DSA: CMakeFiles/DSA.dir/rule
+Arr1: CMakeFiles/Arr1.dir/rule
 
-.PHONY : DSA
+.PHONY : Arr1
 
 # clean rule for target.
-CMakeFiles/DSA.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/clean
-.PHONY : CMakeFiles/DSA.dir/clean
+CMakeFiles/Arr1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/clean
+.PHONY : CMakeFiles/Arr1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BT1.dir
+
+# All Build rule for target.
+CMakeFiles/BT1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=3,4,5 "Built target BT1"
+.PHONY : CMakeFiles/BT1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BT1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/BT1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/BT1.dir/rule
+
+# Convenience name for target.
+BT1: CMakeFiles/BT1.dir/rule
+
+.PHONY : BT1
+
+# clean rule for target.
+CMakeFiles/BT1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/clean
+.PHONY : CMakeFiles/BT1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

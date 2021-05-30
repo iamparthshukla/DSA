@@ -51,5 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/DSA.dir/DependInfo.cmake"
+  "CMakeFiles/Arr1.dir/DependInfo.cmake"
+  "CMakeFiles/BT1.dir/DependInfo.cmake"
   )
