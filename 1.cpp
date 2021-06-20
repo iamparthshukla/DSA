@@ -1,45 +1,37 @@
-// Reverse an array
-// There are generally two methods:
-// 1. Make a new array and store elements using a reverse loop
-// 2. Make a temp element, and reverse the elements using that
-// We are using method 2
+//Write a program to reverse an array or string
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-// reverse an array
-
-void reverse (int arr[],int n)
+void reverse (int arr[], int n)
 {
-    int temp, i;
-    for (i=0;i<n/2;i++)
+    int temp;
+    for (int i=0; i<n/2; i++)
     {
+        //using temp
         temp = arr[i];
-        arr[i] = arr[n-1-i];
-        arr[n-1-i] = temp;
-        i++;
+        arr[i] = arr[n-i-1];
+        arr[n-i-1] = temp;
     }
+
 }
 
 int main()
 {
     int n;
-    cout<<"Enter the number of arrays you want :"<<"\n";
     cin>>n;
-    while (n)
+    while (n--)
     {
         int size;
-        cout<<"Enter the length of the array: "<<"\n";
+        cout<<"Enter the size of the array: \n";
         cin>>size;
-        int arr[10];
-        int i;
-        cout<<"Enter the array:\n";
-        for (i=0;i<size;i++)
+        int arr[size];
+        cout<<"Enter the elements: \n";
+        for (int i=0; i<size; i++)
             cin>>arr[i];
-        reverse(arr,size);
-        cout<<"The reverse array is:\n";
-        for (i=0;i<size;i++)
-            cout<<arr[i];
-        n--;
+        reverse(arr, size);
+        for (int i=0; i<size; i++)
+            cout<<arr[i]<<" ";
     }
 }

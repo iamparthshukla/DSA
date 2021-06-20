@@ -1,29 +1,85 @@
-// Maximum and minimum of an array using minimum number of comparisons
-// There are two ways to do this:
-// 1. Brute force: Pick up each element, compare, if bigger than all, continue, if not, break
-// 2. Sort and pick the first and last element
+// Minimum and Maximum of an array
+// Method (1) Linear Search
+// Method (2) Tournament method : Divide and Conquer
+// Method (3) Compare in pairs ----> MOST
 
-#include <iostream>
-#include <algorithm>
+#include "iostream"
 using namespace std;
 
-void compare(int arr[], int n)
+void minmax (int arr[], int size)
 {
-    sort (arr, arr+n);
-    cout<<"Smallest element: "<<arr[0]<<"\n";
-    cout<<"Largest element: "<<arr[n-1];
-}
+    int min, max, i;
+    if (size%2==0)
+    {
+        if (arr[0] == arr[1])
+        {
+            min = arr[0];
+            max = arr[1];
+        }
+        if (arr[0] < arr[1])
+        {
+            min = arr[0];
+            max = arr[1];
+        }
+        if (arr[0] > arr[1])
+        {
+            min = arr[1];
+            max = arr[0];
+        }
+        i = 2;
+    }
 
+    if (size%2!=0)
+    {
+        min = arr[0];
+        max = arr[0];
+        i = 1;
+    }
+
+    while (i<size-1)    //since i is starting from 0, runs one ahead the size
+    {
+        if (arr[i]>arr[i+1])
+        {
+            if (arr[i]>max)
+                max = arr[i];
+            if (arr[i+1]<min)
+                min = arr[i+1];
+        }
+
+        if (arr[i]<arr[i+1])
+        {
+            if (arr[i+1]>max)
+                max = arr[i+1];
+            if (arr[i]<min)
+                min = arr[i];
+        }
+        if (arr[i]==arr[i+1])
+        {
+            if (arr[i]>max)
+                max = arr[i];
+            if (arr[i]<min)
+                min = arr[i];
+        }
+        i = i+2;
+    }
+
+    cout<<"Max element is: "<<max<<"\n";
+    cout<<"Min element is: "<<min<<"\n";
+}
 
 int main()
 {
     int n;
-    cout<<"Enter the size of the array: \n";
     cin>>n;
-    cout<<"Enter the array: \n";
-    int arr[n];
-    for (int i = 0; i < n; i++)
-        cin>>arr[i];
-    int len = n;
-    compare (arr, len);
+    while(n--)
+    {
+        int size;
+        cout<<"Enter the size of the array: \n";
+        cin>>size;
+        int arr[size];
+        cout<<"Enter the elements of the array: \n";
+        for (int i=0; i<size; i++)
+            cin>>arr[i];
+        minmax(arr, size);
+    }
 }

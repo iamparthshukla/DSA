@@ -75,9 +75,11 @@ all: CMakeFiles/Arr1.dir/all
 all: CMakeFiles/BT1.dir/all
 all: CMakeFiles/Arr2.dir/all
 all: CMakeFiles/String47.dir/all
+all: CMakeFiles/Arr10.dir/all
 all: CMakeFiles/Arr3.dir/all
 all: CMakeFiles/Arr4.dir/all
 all: CMakeFiles/Arr5.dir/all
+all: CMakeFiles/QuickSort.dir/all
 
 .PHONY : all
 
@@ -91,9 +93,11 @@ clean: CMakeFiles/Arr1.dir/clean
 clean: CMakeFiles/BT1.dir/clean
 clean: CMakeFiles/Arr2.dir/clean
 clean: CMakeFiles/String47.dir/clean
+clean: CMakeFiles/Arr10.dir/clean
 clean: CMakeFiles/Arr3.dir/clean
 clean: CMakeFiles/Arr4.dir/clean
 clean: CMakeFiles/Arr5.dir/clean
+clean: CMakeFiles/QuickSort.dir/clean
 
 .PHONY : clean
 
@@ -131,7 +135,7 @@ CMakeFiles/Arr1.dir/clean:
 CMakeFiles/BT1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BT1.dir\build.make CMakeFiles/BT1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target BT1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target BT1"
 .PHONY : CMakeFiles/BT1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,7 +162,7 @@ CMakeFiles/BT1.dir/clean:
 CMakeFiles/Arr2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr2.dir\build.make CMakeFiles/Arr2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr2.dir\build.make CMakeFiles/Arr2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target Arr2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target Arr2"
 .PHONY : CMakeFiles/Arr2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -185,7 +189,7 @@ CMakeFiles/Arr2.dir/clean:
 CMakeFiles/String47.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\String47.dir\build.make CMakeFiles/String47.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target String47"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target String47"
 .PHONY : CMakeFiles/String47.dir/all
 
 # Build rule for subdir invocation for target.
@@ -206,13 +210,40 @@ CMakeFiles/String47.dir/clean:
 .PHONY : CMakeFiles/String47.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Arr10.dir
+
+# All Build rule for target.
+CMakeFiles/Arr10.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target Arr10"
+.PHONY : CMakeFiles/Arr10.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Arr10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Arr10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Arr10.dir/rule
+
+# Convenience name for target.
+Arr10: CMakeFiles/Arr10.dir/rule
+
+.PHONY : Arr10
+
+# clean rule for target.
+CMakeFiles/Arr10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/clean
+.PHONY : CMakeFiles/Arr10.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Arr3.dir
 
 # All Build rule for target.
 CMakeFiles/Arr3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr3.dir\build.make CMakeFiles/Arr3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr3.dir\build.make CMakeFiles/Arr3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target Arr3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target Arr3"
 .PHONY : CMakeFiles/Arr3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -239,7 +270,7 @@ CMakeFiles/Arr3.dir/clean:
 CMakeFiles/Arr4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr4.dir\build.make CMakeFiles/Arr4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr4.dir\build.make CMakeFiles/Arr4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target Arr4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target Arr4"
 .PHONY : CMakeFiles/Arr4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -266,7 +297,7 @@ CMakeFiles/Arr4.dir/clean:
 CMakeFiles/Arr5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr5.dir\build.make CMakeFiles/Arr5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr5.dir\build.make CMakeFiles/Arr5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target Arr5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target Arr5"
 .PHONY : CMakeFiles/Arr5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -285,6 +316,33 @@ Arr5: CMakeFiles/Arr5.dir/rule
 CMakeFiles/Arr5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr5.dir\build.make CMakeFiles/Arr5.dir/clean
 .PHONY : CMakeFiles/Arr5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/QuickSort.dir
+
+# All Build rule for target.
+CMakeFiles/QuickSort.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target QuickSort"
+.PHONY : CMakeFiles/QuickSort.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/QuickSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/QuickSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\parth\CLionProjects\DSA\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/QuickSort.dir/rule
+
+# Convenience name for target.
+QuickSort: CMakeFiles/QuickSort.dir/rule
+
+.PHONY : QuickSort
+
+# clean rule for target.
+CMakeFiles/QuickSort.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/clean
+.PHONY : CMakeFiles/QuickSort.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

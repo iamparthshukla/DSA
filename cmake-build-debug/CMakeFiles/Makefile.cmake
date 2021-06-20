@@ -55,7 +55,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BT1.dir/DependInfo.cmake"
   "CMakeFiles/Arr2.dir/DependInfo.cmake"
   "CMakeFiles/String47.dir/DependInfo.cmake"
+  "CMakeFiles/Arr10.dir/DependInfo.cmake"
   "CMakeFiles/Arr3.dir/DependInfo.cmake"
   "CMakeFiles/Arr4.dir/DependInfo.cmake"
   "CMakeFiles/Arr5.dir/DependInfo.cmake"
+  "CMakeFiles/QuickSort.dir/DependInfo.cmake"
   )

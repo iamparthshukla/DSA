@@ -181,6 +181,19 @@ String47/fast:
 .PHONY : String47/fast
 
 #=============================================================================
+# Target rules for targets named Arr10
+
+# Build rule for target.
+Arr10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Arr10
+.PHONY : Arr10
+
+# fast build rule for target.
+Arr10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/build
+.PHONY : Arr10/fast
+
+#=============================================================================
 # Target rules for targets named Arr3
 
 # Build rule for target.
@@ -219,6 +232,19 @@ Arr5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr5.dir\build.make CMakeFiles/Arr5.dir/build
 .PHONY : Arr5/fast
 
+#=============================================================================
+# Target rules for targets named QuickSort
+
+# Build rule for target.
+QuickSort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 QuickSort
+.PHONY : QuickSort
+
+# fast build rule for target.
+QuickSort/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/build
+.PHONY : QuickSort/fast
+
 1.obj: 1.cpp.obj
 
 .PHONY : 1.obj
@@ -245,6 +271,33 @@ Arr5/fast:
 1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr1.dir\build.make CMakeFiles/Arr1.dir/1.cpp.s
 .PHONY : 1.cpp.s
+
+10.obj: 10.cpp.obj
+
+.PHONY : 10.obj
+
+# target to build an object file
+10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/10.cpp.obj
+.PHONY : 10.cpp.obj
+
+10.i: 10.cpp.i
+
+.PHONY : 10.i
+
+# target to preprocess a source file
+10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/10.cpp.i
+.PHONY : 10.cpp.i
+
+10.s: 10.cpp.s
+
+.PHONY : 10.s
+
+# target to generate assembly for a file
+10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr10.dir\build.make CMakeFiles/Arr10.dir/10.cpp.s
+.PHONY : 10.cpp.s
 
 162.obj: 162.cpp.obj
 
@@ -408,6 +461,33 @@ Arr5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Arr5.dir\build.make CMakeFiles/Arr5.dir/5.cpp.s
 .PHONY : 5.cpp.s
 
+QuickSort.obj: QuickSort.cpp.obj
+
+.PHONY : QuickSort.obj
+
+# target to build an object file
+QuickSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/QuickSort.cpp.obj
+.PHONY : QuickSort.cpp.obj
+
+QuickSort.i: QuickSort.cpp.i
+
+.PHONY : QuickSort.i
+
+# target to preprocess a source file
+QuickSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/QuickSort.cpp.i
+.PHONY : QuickSort.cpp.i
+
+QuickSort.s: QuickSort.cpp.s
+
+.PHONY : QuickSort.s
+
+# target to generate assembly for a file
+QuickSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QuickSort.dir\build.make CMakeFiles/QuickSort.dir/QuickSort.cpp.s
+.PHONY : QuickSort.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -417,15 +497,20 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Arr1
+	@echo ... Arr10
 	@echo ... Arr2
 	@echo ... Arr3
 	@echo ... Arr4
 	@echo ... Arr5
 	@echo ... BT1
+	@echo ... QuickSort
 	@echo ... String47
 	@echo ... 1.obj
 	@echo ... 1.i
 	@echo ... 1.s
+	@echo ... 10.obj
+	@echo ... 10.i
+	@echo ... 10.s
 	@echo ... 162.obj
 	@echo ... 162.i
 	@echo ... 162.s
@@ -444,6 +529,9 @@ help:
 	@echo ... 5.obj
 	@echo ... 5.i
 	@echo ... 5.s
+	@echo ... QuickSort.obj
+	@echo ... QuickSort.i
+	@echo ... QuickSort.s
 .PHONY : help
 
 
